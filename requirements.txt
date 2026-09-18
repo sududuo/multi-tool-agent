@@ -1,0 +1,9 @@
+langchain
+langchain-openai
+langchain-chroma
+langchain-text-splitters
+langgraph
+langgraph-checkpoint-sqlite
+python-dotenv
+requests
+chromadb
