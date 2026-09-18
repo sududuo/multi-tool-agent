@@ -34,11 +34,6 @@ from langgraph.prebuilt import (
 from langgraph.checkpoint.sqlite import SqliteSaver
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
-
-company_file = BASE_DIR / "data" / "company.txt"
-
-db_path = BASE_DIR / "chroma_db"
 
 # ============================================================
 # 1. 加载环境变量
@@ -70,6 +65,11 @@ embeddings = OpenAIEmbeddings(
     check_embedding_ctx_length=False,
 )
 
+BASE_DIR = Path(__file__).resolve().parent
+
+company_file = BASE_DIR / "data" / "company.txt"
+
+db_path = BASE_DIR / "chroma_db"
 
 
 if not os.path.exists(db_path):
