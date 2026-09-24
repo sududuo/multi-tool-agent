@@ -7,3 +7,4 @@ langgraph-checkpoint-sqlite
 python-dotenv
 requests
 chromadb
+dashscope
